@@ -8,9 +8,10 @@ class Hotel {
   final String image;
   final double rating;
   final int rCount;
-  final double longtitude;
-  final double laititude;
+  final double longitude;
+  final double latitude;
   final String webSite;
+  final int phone;
 
 
   Hotel( {
@@ -22,9 +23,9 @@ class Hotel {
     @required this.rating,
     this.webSite,
     this.rCount,
-     this.longtitude,
-     this.laititude
-
+    @required this.longitude,
+    @required this.latitude,
+    this.phone
   });
 }
 
@@ -40,8 +41,8 @@ List<Hotel> demoHotels = [
       image: 'https://pix10.agoda.net/hotelImages/119/1197844/1197844_16051108350042215464.jpg?s=1024x768',
       rating: 5,
       rCount: 43,
-      laititude: 47.91951609217565,
-      longtitude:  107.91754493569286
+      latitude: 47.91951609217565,
+      longitude:  107.91754493569286
   ),
   Hotel(
       id: 2,
@@ -52,8 +53,10 @@ List<Hotel> demoHotels = [
       image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/6f/f3/74/exterior.jpg?w=900&h=-1&s=1',
       rating: 3,
       rCount: 157,
-      laititude: 48.91951609217565,
-      longtitude:  106.91754493569286),
+
+      latitude: 47.91951609217565,
+      longitude:  107.91754493569286
+  ),
   Hotel(
       id: 3,
       name: 'Ulaanbaatar hotel',

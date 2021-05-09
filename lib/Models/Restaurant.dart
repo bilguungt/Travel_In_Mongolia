@@ -8,12 +8,12 @@ class Restaurant {
   final String image;
   final double rating;
   final int rCount;
-  final double longtitude;
-  final double laititude;
+  final double longitude;
+  final double latitude;
   final String webSite;
+  final int phone;
 
-
-  Restaurant( {
+  Restaurant({
     @required this.id,
     @required this.name,
     @required this.description,
@@ -21,9 +21,10 @@ class Restaurant {
     @required this.image,
     @required this.rating,
     this.webSite,
+    this.phone,
     this.rCount,
-    this.longtitude,
-    this.laititude
+    this.longitude,
+    this.latitude
 
   });
 }
@@ -40,8 +41,8 @@ List<Restaurant> demoRestaurant = [
       image: 'https://mongolia-guide.com/uploads/main/ABOUT%20MONGOLIA/FOOD/huushuur.jpg',
       rating: 5,
       rCount: 43,
-      laititude: 47.919341609217565,
-      longtitude:  107.91754493569286
+      latitude: 47.919341609217565,
+      longitude:  107.91754493569286
   ),
   Restaurant(
       id: 2,
@@ -52,8 +53,8 @@ List<Restaurant> demoRestaurant = [
       image: 'https://interior.mn/wp-content/uploads/2020/06/YU1.jpg',
       rating: 3,
       rCount: 157,
-      laititude: 48.91951609217565,
-      longtitude:  106.91754493569286),
+      latitude: 48.91951609217565,
+      longitude:  106.91754493569286),
   Restaurant(
       id: 3,
       name: 'little sheep mongolia',

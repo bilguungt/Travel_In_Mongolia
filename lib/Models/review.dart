@@ -9,6 +9,7 @@ class Review {
   double rating;
   String dateCreated;
   String type;
+
   Review({this.reviewId, this.userId, this.userName, this.avatar, this.placeId, this.content, this.rating, this.dateCreated , this.type, });
 
 
